@@ -1,0 +1,47 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "test_pms",
+    "children" : [ {
+      "name" : "TestPMS",
+      "children" : [ {
+        "name" : "test_login[user_account0]",
+        "uid" : "8ae3f74d8c4bd5dc",
+        "parentUid" : "2789563511c9f1ca25d69254f89e07c5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1661589009913,
+          "stop" : 1661589013488,
+          "duration" : 3575
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'uname': 'admin', 'upass': 'appgroupleaderused'}" ]
+      }, {
+        "name" : "test_login[user_account1]",
+        "uid" : "5e573ec42dda100",
+        "parentUid" : "2789563511c9f1ca25d69254f89e07c5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1661589022666,
+          "stop" : 1661589026277,
+          "duration" : 3611
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'uname': 'admin2', 'upass': 'appgroupleaderused'}" ]
+      } ],
+      "uid" : "2789563511c9f1ca25d69254f89e07c5"
+    } ],
+    "uid" : "989eecc7ce8be84ff0a5646b51a99595"
+  } ]
+}
