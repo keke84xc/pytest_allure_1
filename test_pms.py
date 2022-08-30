@@ -23,11 +23,11 @@ class TestPMS():
 
         chrome_options.add_argument('--disable-dev-shm-usage')
         chrome_options.add_argument('--headless')
-        browser = webdriver.Chrome(chrome_options=chrome_options)
+        #browser = webdriver.Chrome(chrome_options=chrome_options)
 
         # 加载浏览器驱动
         #self.dr = webdriver.Chrome(r'E:\接口自动化\tools\chromedriver_win32\chromedriver.exe')
-        self.dr = webdriver.Chrome(chrome_options=chrome_options,executable_path=r'/usr/bin/chromedriver')
+        self.dr = webdriver.Chrome(options=chrome_options,executable_path=r'/usr/bin/chromedriver')
         time.sleep(2)
         self.dr.get("https://crm2.ysservice.com.cn/#/userlogin")
         self.dr.maximize_window()
