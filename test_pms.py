@@ -11,11 +11,23 @@ from selenium import webdriver
 import time
 import pytest
 
+#linux下需要的代码
+from selenium.webdriver.chrome.options import Options
+
 class TestPMS():
 
     def setup(self):
+
+        chrome_options = Options()
+        chrome_options.add_argument("--no-sandbox")
+
+        chrome_options.add_argument('--disable-dev-shm-usage')
+        chrome_options.add_argument('--headless')
+        browser = webdriver.Chrome(chrome_options=chrome_options)
+
         # 加载浏览器驱动
-        self.dr = webdriver.Chrome(r'E:\接口自动化\tools\chromedriver_win32\chromedriver.exe')
+        #self.dr = webdriver.Chrome(r'E:\接口自动化\tools\chromedriver_win32\chromedriver.exe')
+        self.dr = webdriver.Chrome(chrome_options=chrome_options,webdriver=r'/usr/bin/chromedriver')
         time.sleep(2)
         self.dr.get("https://crm2.ysservice.com.cn/#/userlogin")
         self.dr.maximize_window()
